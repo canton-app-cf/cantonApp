@@ -13,3 +13,22 @@
   padding: 5px;
 }
 
+td {
+  text-align: center;
+}
+
+tr {
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background: red
+}
+
+tr:nth-child(even) {
+  background: blue
+}
+
+tr:first-child {
+  color: black;
+}
