@@ -1,0 +1,29 @@
+<div ui-view="home">
+  <div>
+    Home View
+  </div>
+  <table>
+    <tr>
+      <th>abbr</th>
+      <th>name</th>
+      <th>since</th>
+      <th>capital</th>
+      <th>population</th>
+      <th>area</th>
+      <th>density</th>
+      <th>munis</th>
+      <th>langs</th>
+    </tr>
+    <tr ng-repeat="canton in cantons">
+      <td>{{canton.abbr}}</td>
+      <td>{{canton.name}}</td>
+      <td>{{canton.since}}</td>
+      <td>{{canton.capital}}</td>
+      <td>{{canton.population}}</td>
+      <td>{{canton.area}}</td>
+      <td>{{canton.density}}</td>
+      <td>{{canton.munis}}</td>
+      <td>{{canton.langs}}</td>
+    </tr>
+  </table>
+</div>

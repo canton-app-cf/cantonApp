@@ -1,0 +1,43 @@
+
+<div class="gameboard">
+  <div>search view</div>
+  <form>
+    <div class='questions'>
+      <input type="radio" ng-model="answer" value="0" />Density<br/>
+      <input type="radio" ng-model="answer" value="1" />Population<br/>
+      <input type="radio" ng-model="answer" value="2" />Area<br/>
+      Max: <input type="text" ng-model="max"><br>
+      Min: <input type="text" ng-model="min"><br>
+    </div>
+    <div class='buttons'>
+      <div ng-hide='index'>
+        <button class="button" ng-click="search()">Search</button>
+      </div>
+    </div>
+  </form>
+
+  <table>
+    <tr>
+      <th>abbr</th>
+      <th>name</th>
+      <th>since</th>
+      <th>capital</th>
+      <th>population</th>
+      <th>area</th>
+      <th>density</th>
+      <th>munis</th>
+      <th>langs</th>
+    </tr>
+    <tr ng-repeat="result in results">
+      <td>{{result.abbr}}</td>
+      <td>{{result.name}}</td>
+      <td>{{result.since}}</td>
+      <td>{{result.capital}}</td>
+      <td>{{result.population}}</td>
+      <td>{{result.area}}</td>
+      <td>{{result.density}}</td>
+      <td>{{result.munis}}</td>
+      <td>{{result.langs}}</td>
+    </tr>
+  </table>
+</div>
