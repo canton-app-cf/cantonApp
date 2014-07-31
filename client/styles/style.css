@@ -15,20 +15,23 @@
 
 td {
   text-align: center;
+  border-radius: 5px;
 }
+
 
 tr {
   color: white;
 }
 
 tr:nth-child(odd) {
-  background: red
+  background: rgba(210,15,50,0.75);
 }
 
 tr:nth-child(even) {
-  background: blue
+  background: rgba(50,15,250,0.75);
 }
 
 tr:first-child {
   color: black;
 }
+
